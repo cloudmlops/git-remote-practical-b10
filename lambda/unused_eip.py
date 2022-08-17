@@ -18,7 +18,7 @@ def lambda_handler(event, context):
                 network_interface_id = addresses['Addresses'][0]['NetworkInterfaceId']
                 print("NetworkInterfaceId",network_interface_id)
         else:
-            print("No EIP Found")
+            print("No EIP Found in the region",region)
 
     # TODO implement
     return {
